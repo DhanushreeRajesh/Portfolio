@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhanushree M R | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #ffe8ec, #d8f3dc);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #888;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background: #f9f9f9;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0.5rem 0;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #444;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #e0f7fa;
+      color: #00796b;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #4a4e69;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .resume-block {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .resume-block p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #555;
+    }
+
+    .resume-btn {
+      background-color: #76c7c0;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .resume-btn:hover {
+      background-color: #48b0a5;
+      transform: scale(1.05);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: #fefefe;
+      border: 1px solid #eee;
+      padding: 1.2rem;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f0f0f0;
+      color: #777;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dhanushree M R</h1>
+    <p>Front-End Developer | Java Enthusiast</p>
+    <p class="quote">“Bridging creativity with logic to build purposeful digital experiences.”</p>
+  </header>
+
+  <div class="resume-block container">
+    <h2>📄 Download My Resume</h2>
+    
+    <a class="resume-btn" href="DHANUSHREE M R.pdf" download>Download Resume</a>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#whyme">Why Me?</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>
+      A passionate developer with a knack for design and logic. I bring a blend of creativity and precision
+      to every project, aiming to build clean, user-focused digital solutions.
+    </p>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">HTML, CSS, JavaScript, DOM</div>
+      <div class="card">Java – OOP, Collections, Exception Handling</div>
+      <div class="card">SQL – Joins, Views, Queries</div>
+      <div class="card">Tools – Git, Maven, Spring Boot</div>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card"><strong>Agriculture Farm Management:</strong> A marketplace platform for farmers</div>
+      <div class="card"><strong>3D Bike Simulation:</strong> A 3D simulation using Java</div>
+      <div class="card"><strong>Attendance System:</strong> Facial recognition using Flask</div>
+    </div>
+  </section>
+
+  <section id="experience" class="container">
+    <h2>Experience</h2>
+    <ul>
+      <li>Java Intern – Accolade Solutions</li>
+      <li>Full Stack Intern – Taniya Technology</li>
+      <li>Content Creator – Artha Weblabs</li>
+    </ul>
+  </section>
+
+  <section id="testimonials" class="container">
+    <h2>Testimonials</h2>
+    <div class="grid">
+      <div class="card">"A creative mind with strong development skills. Pleasure to work with!" –Team lead Bhoomika ,Artha Weblabs</div>
+      <div class="card">"Delivered consistent quality with attention to detail and professionalism.Keen
+        interest in learning new technologies, with a great fluency and hold on communication" –Branch head Shankar Narayan ,Jspiders </div>
+    </div>
+  </section>
+
+  <section id="whyme" class="container">
+    <h2>Why Should You Hire Me?</h2>
+    <ul>
+      <li>Full-stack exposure with a front-end focus and Java backend.</li>
+      <li>Leadership in organizing events and mentoring peers.</li>
+      <li>Fast learner, detail-driven, and solution-oriented mindset.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:dhanushreerajesh4@gmail.com">dhanushreerajesh4@gmail.com</a></p>
+    
+    <p>
+      <a href="https://github.com/DhanushreeRajesh" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/dhanushree-m-r-971702325" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Dhanushree M R — Designed with ✨ for recruiters</p>
+  </footer>
+
+</body>
+</html>
